@@ -1,3 +1,5 @@
+using MySandboxApp.Dal;
+using MySandboxApp.Dal.Options;
 
 namespace MySandBoxApp
 {
@@ -6,7 +8,11 @@ namespace MySandBoxApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var configuration = builder.Configuration;
 
+            builder.Services.Configure<DbOptions>(configuration.GetSection("ConnectionStrings"));
+
+            builder.Services.AddDbContext<AppDbContext>();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
