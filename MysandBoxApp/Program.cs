@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MySandboxApp.Dal;
 using MySandboxApp.Dal.Options;
 
@@ -13,6 +14,21 @@ namespace MySandBoxApp
             builder.Services.Configure<DbOptions>(configuration.GetSection("ConnectionStrings"));
 
             builder.Services.AddDbContext<AppDbContext>();
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme);
+
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.TokenValidationParameters = new()
+                {
+
+                };
+            });
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
