@@ -30,7 +30,6 @@ namespace MySandBoxApp
 
             app.UseAuthorization();
 
-
             app.MapControllers();
 
             app.Run();

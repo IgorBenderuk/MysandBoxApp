@@ -15,5 +15,9 @@ namespace MySandboxApp.Dal.Entities
         public UserRole Role { get; set; }
 
         public DateTime CreatedAt { get; set; }
+
+        public ICollection<Order> Orders { get; set; }
+
+        public ICollection<Product> ProductsForSale { get; set; }
     }
 }
