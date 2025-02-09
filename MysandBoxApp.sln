@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35125.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySandBoxApp", "MysandBoxApp\MySandBoxApp.csproj", "{D48728EC-1099-4907-B9B1-E7ECD3FD6AEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySandBoxApp", "MysandBoxApp\MySandBoxApp.csproj", "{D48728EC-1099-4907-B9B1-E7ECD3FD6AEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySandBoxApp.Blll", "MySandBoxApp.Blll\MySandBoxApp.Blll.csproj", "{62E033AD-52D6-4063-96C6-D96B5778660E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySandBoxApp.Blll", "MySandBoxApp.Blll\MySandBoxApp.Blll.csproj", "{62E033AD-52D6-4063-96C6-D96B5778660E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySandBoxApp.Core", "MySandBoxApp.Core\MySandBoxApp.Core.csproj", "{3C872616-1AA2-4960-8857-E5655FCE928F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySandBoxApp.Core", "MySandBoxApp.Core\MySandBoxApp.Core.csproj", "{3C872616-1AA2-4960-8857-E5655FCE928F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySandboxApp.Dal", "MySandboxApp.Dal\MySandboxApp.Dal.csproj", "{8CBDCC26-FE2F-4547-BE72-6EE97C8A41AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySandboxApp.Dal", "MySandboxApp.Dal\MySandboxApp.Dal.csproj", "{8CBDCC26-FE2F-4547-BE72-6EE97C8A41AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeaMarketPlace.EmailService", "TeaMarketPlace.EmailService\TeaMarketPlace.EmailService.csproj", "{727E7487-1C84-49F3-8419-78181C3FF346}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8CBDCC26-FE2F-4547-BE72-6EE97C8A41AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CBDCC26-FE2F-4547-BE72-6EE97C8A41AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CBDCC26-FE2F-4547-BE72-6EE97C8A41AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{727E7487-1C84-49F3-8419-78181C3FF346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{727E7487-1C84-49F3-8419-78181C3FF346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{727E7487-1C84-49F3-8419-78181C3FF346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{727E7487-1C84-49F3-8419-78181C3FF346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
